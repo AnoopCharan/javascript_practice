@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <p>
+        Three types of variable declarations
+    </p>
+    <pre>
+        <pre style="color: blue;">
+        // var, let ,const
+
+        // var has been the way to declare variables since begining of javascript
+        // let and const are recent additions
+
+        // var:
+        // can be initialized as undefined ex: var x;
+        // global scope
+        </pre>
+        var myname = 'anoop';
+        console.log(myname);
+
+        myname='sai charan';
+        console.log(myname);
+
+        // initialize var
+        var greeting;
+        console.log(greeting); //will say undefined
+
+        greeting = 'How are you?';
+        console.log(greeting);
+
+        // letters, numbers, _, $ are allowed in var names, cannot start with number
+        //  _ is used for private variables
+
+        // multiword variable- use camel case
+        var firstName = 'Anoop';
+
+        // let:
+        // can be intialized as undefined ex: let x;
+        // block scoped - exists inside a block
+        // cannot initialize two let variables with same name or cannot reintialize with same name
+        // CAN reassign value
+
+        let fname = 'mouni';
+        console.log(fname);
+
+        // let fname = 'yel'; // cannot reintialize with same name
+        console.log(fname)
+
+        // const:
+        // cannot reintialize, cannot reassign.
+        // cannot reintialize with same name, but objects' properties can be changed, like dict, arrays
+
+        const person ={
+            "name" : "anoop",
+            "age"   : 28
+        }
+
+        console.log('person:' , person);
+
+        person.name ="mouni";
+        person.age =26;
+
+        console.log('person updated:', person);
+
+        person.location ="india";
+
+        var man ={
+            "name" : "anoop",
+            "age"   : 28
+        }
+
+        man.location = "canada";
+
+        console.log(man)
+
+        const g = 9.8
+
+        g =10  //this wil not work
+
+        console.log(g)
+
+
+    </pre>
+    
+</body>
+<script src="js_fundamentals/variables.js" type="text/javascript"></script>
+</html>
