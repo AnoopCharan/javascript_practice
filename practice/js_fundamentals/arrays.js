@@ -54,3 +54,14 @@ console.log('sorted numbers', val.sort((a, b) => a-b));
 // finding first instance
 
 console.log('find a numbers greater than 50', val.find((a) => a > 50));
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i = 0;
+let text = "";
+
+while (cars[i]) {
+
+  text += cars[i];
+  console.log(text);
+  i++;
+}

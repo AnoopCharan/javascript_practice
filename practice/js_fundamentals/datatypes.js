@@ -7,7 +7,7 @@
 
 // 2. Reference Data Types: 
 // Accesses by reference
-// Objects that are stored on the heap
+// Objects (reference type) that are stored on the heap
 // A pointer to a location in memory
 
 // SIX primitive Data types
@@ -33,6 +33,10 @@
 // No need to specify type of variable like in C int a etc.
 // Most other languages are statically typed (Java, C, C++)
 // Typescript and flow are supersets of JS and allow for static typing 
+// 
+// **** Since primitives are stored on stack and reference types are stored in heap
+// any reassignement and changing variable will not change primitive type, but will change in reference type
+//  for ex: name= "anoop", is always same, Person.name="anoop", can be reassigned from anywhere
 
 
 // PRIMITIVE
